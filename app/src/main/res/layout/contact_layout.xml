@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/contact_layout_root"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="15dp"
+        android:background="@drawable/toast_shape"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dialog_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Need Help?"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/copyright_txt"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:id="@+id/call_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="Call 1-877-522-3372"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/copyright_txt"/>
+
+        <TextView
+            android:id="@+id/time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="9:00 A.M - 8:00 P.M ET M-F"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/copyright_txt"/>
+
+        <TextView
+            android:id="@+id/email_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="Email: Dealerdirectsupport@adesa.com"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/copyright_txt"/>
+
+        <Button
+            android:id="@+id/ok_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/image_view_background"
+            android:gravity="center"
+            android:text="OK"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/copyright_txt"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
