@@ -16,14 +16,9 @@
         <activity
             android:name=".MainActivity"
             android:label="Notifications">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
         </activity>
         <activity android:name=".PhoneEmailActivity">
-
         </activity>
 
         <meta-data
@@ -38,16 +33,25 @@
             </intent-filter>
         </receiver>
 
-        <activity android:name=".BranchIOTestActivity"
-                  android:launchMode="singleTask"
-                  android:noHistory="true"
-                  android:screenOrientation="portrait">
-
+        <activity
+            android:name=".BranchIOTestActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:screenOrientation="portrait">
             <intent-filter>
-                <data android:scheme="tddpl" />
-                <action android:name="android.intent.action.VIEW" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tddpl"/>
+
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".VolleyNetworkCallActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
     </application>
