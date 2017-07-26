@@ -16,7 +16,6 @@
         <activity
             android:name=".MainActivity"
             android:label="Notifications">
-
         </activity>
         <activity android:name=".PhoneEmailActivity">
         </activity>
@@ -47,7 +46,12 @@
                 <category android:name="android.intent.category.BROWSABLE"/>
             </intent-filter>
         </activity>
-        <activity android:name=".VolleyNetworkCallActivity">
+        <activity android:name=".VolleyNetworkCallActivity"
+            android:label="Volley Network Call">
+
+        </activity>
+        <activity android:name=".CreditCardScanActivity"
+            android:label="Credit Card Scan">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
