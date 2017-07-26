@@ -32,5 +32,11 @@ dependencies {
     compile 'com.android.volley:volley:1.0.0'
     compile 'io.card:android-sdk:5.5.1'
     compile 'com.orhanobut:logger:2.1.1'
+    //Lollipin https://github.com/pritamworld/LolliPin
+    compile ('com.github.orangegangsters:lollipin:2.0.0@aar') {
+        transitive = true
+    }
+    //Lollipop dialogs https://github.com/lewisjdeane/L-Dialogs and buttons, animations etc...
+    compile 'uk.me.lewisdeane.ldialogs:ldialogs:1.2.0@aar'
     testCompile 'junit:junit:4.12'
 }

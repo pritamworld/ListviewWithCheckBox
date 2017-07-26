@@ -2,6 +2,9 @@ package com.pritesh.listviewwithcheckbox;
 
 import android.app.Application;
 
+import com.github.orangegangsters.lollipin.lib.managers.LockManager;
+import com.pritesh.listviewwithcheckbox.lollipin.CustomPinActivity;
+
 import org.json.JSONObject;
 
 import io.branch.referral.Branch;
@@ -20,6 +23,11 @@ public class CustomBranchIOApplicationClass extends Application
         // initialize the Branch object
         //Branch.setPlayStoreReferrerCheckTimeout(0);
         Branch.getAutoInstance(this);
+
+        //LolliPin
+        LockManager<CustomPinActivity> lockManager = LockManager.getInstance();
+        lockManager.enableAppLock(this, CustomPinActivity.class);
+        lockManager.getAppLock().setLogoId(R.drawable.security_lock);
     }
 
     public JSONObject getBranchParams()

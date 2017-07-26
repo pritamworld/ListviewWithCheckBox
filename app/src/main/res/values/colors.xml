@@ -6,4 +6,8 @@
     <color name="black_color">#000000</color>
     <color name="image_view_background">#D3D3D3</color>
     <color name="white_row">#FFFFFF</color>
+    <!-- LolliPin -->
+    <color name="material_blue_500">#009688</color>
+    <color name="material_blue_700">#00796B</color>
+    <color name="material_green_A200">#FD87A9</color>
 </resources>
