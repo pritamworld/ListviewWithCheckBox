@@ -46,12 +46,16 @@
                 <category android:name="android.intent.category.BROWSABLE"/>
             </intent-filter>
         </activity>
-        <activity android:name=".VolleyNetworkCallActivity"
+        <activity
+            android:name=".VolleyNetworkCallActivity"
             android:label="Volley Network Call">
-
         </activity>
-        <activity android:name=".CreditCardScanActivity"
+        <activity
+            android:name=".CreditCardScanActivity"
             android:label="Credit Card Scan">
+        </activity>
+        <activity android:name=".OrhanobutLoggerActivity"
+            android:label="Orhanobut Logger">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
