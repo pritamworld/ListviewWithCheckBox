@@ -1,8 +1,12 @@
 package com.pritesh.listviewwithcheckbox;
 
+import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 
 import com.orhanobut.logger.AndroidLogAdapter;
 import com.orhanobut.logger.DiskLogAdapter;
@@ -15,16 +19,61 @@ import java.util.HashMap;
 import java.util.Map;
 
 //https://github.com/pritamworld/logger
-public class OrhanobutLoggerActivity extends AppCompatActivity
+public class OrhanobutLoggerActivity extends Activity
 {
-
+    Button btnAlert;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_orhanobut_logger);
+
+        btnAlert = (Button)findViewById(R.id.btnAlert);
+        btnAlert.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                showAlert();
+            }
+        });
         callLogger();
     }
+
+    private void showAlert()
+    {
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
+                this);
+
+        // set title
+        alertDialogBuilder.setTitle("Payment Waiver Acceptance".toUpperCase());
+
+        // set dialog message
+        alertDialogBuilder
+                .setMessage("This Payment Waiver Program will require you to guarantee remaining payments.  \n\nDo you want to continue?")
+                .setCancelable(false)
+                .setPositiveButton("Yes",new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog,int id) {
+                        // if this button is clicked, close
+                        // current activity
+                        OrhanobutLoggerActivity.this.finish();
+                    }
+                })
+                .setNegativeButton("No",new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog,int id) {
+                        // if this button is clicked, just close
+                        // the dialog box and do nothing
+                        dialog.cancel();
+                    }
+                });
+
+        // create alert dialog
+        AlertDialog alertDialog = alertDialogBuilder.create();
+
+        // show it
+        alertDialog.show();
+    }
+
 
     private void callLogger()
     {
