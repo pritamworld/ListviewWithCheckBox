@@ -11,5 +11,8 @@
     <string name="activity_dialog_decline">CANCEL</string>
     <string name="activity_dialog_content">Tap \'OK\' to log out, when you log back in you\'ll be able to create a new Pincode.\n\nIf you remember your Pincode, tap \'Cancel\' to go back.</string>
     <string name="activity_appcompat_message">I am a PinCompatActivity!</string>
+    <string name="pw_title">PAYMENT WAIVER ACCEPTANCE</string>
+    <string name="pw_message1">The Payament Waiver Program will require you to guarantee the remaining payments.</string>
+    <string name="pw_message2">Do you want to continue?</string>
 
 </resources>

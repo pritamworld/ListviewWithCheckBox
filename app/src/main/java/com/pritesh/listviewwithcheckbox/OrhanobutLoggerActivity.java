@@ -2,9 +2,9 @@ package com.pritesh.listviewwithcheckbox;
 
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 
@@ -42,35 +42,32 @@ public class OrhanobutLoggerActivity extends Activity
 
     private void showAlert()
     {
-        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
-                this);
+        LayoutInflater li = LayoutInflater.from(OrhanobutLoggerActivity.this);
+        View promptsView = li.inflate(R.layout.alert_pw_acceptance, null);
+        Button btnYes, btnNo;
+        btnYes = (Button) promptsView.findViewById(R.id.btnYes);
+        btnNo = (Button) promptsView.findViewById(R.id.btnNo);
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
+        alertDialogBuilder.setView(promptsView);
+        alertDialogBuilder.setCancelable(false);
+        final AlertDialog alertDialog = alertDialogBuilder.create();
+        btnYes.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                OrhanobutLoggerActivity.this.finish();
+            }
+        });
 
-        // set title
-        alertDialogBuilder.setTitle("Payment Waiver Acceptance".toUpperCase());
-
-        // set dialog message
-        alertDialogBuilder
-                .setMessage("This Payment Waiver Program will require you to guarantee remaining payments.  \n\nDo you want to continue?")
-                .setCancelable(false)
-                .setPositiveButton("Yes",new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog,int id) {
-                        // if this button is clicked, close
-                        // current activity
-                        OrhanobutLoggerActivity.this.finish();
-                    }
-                })
-                .setNegativeButton("No",new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog,int id) {
-                        // if this button is clicked, just close
-                        // the dialog box and do nothing
-                        dialog.cancel();
-                    }
-                });
-
-        // create alert dialog
-        AlertDialog alertDialog = alertDialogBuilder.create();
-
-        // show it
+        btnNo.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                alertDialog.dismiss();
+            }
+        });
         alertDialog.show();
     }
 
