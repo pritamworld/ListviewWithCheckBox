@@ -54,30 +54,34 @@
             android:name=".CreditCardScanActivity"
             android:label="Credit Card Scan">
         </activity>
-        <activity android:name=".OrhanobutLoggerActivity"
+        <activity
+            android:name=".OrhanobutLoggerActivity"
             android:label="Orhanobut Logger">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
-
         <activity
             android:name=".lollipin.MainActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name">
         </activity>
         <activity
             android:name=".lollipin.NotLockedActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name">
         </activity>
         <activity
             android:name=".lollipin.CustomPinActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name">
         </activity>
-        <activity android:name=".lollipin.LockedCompatActivity"
-                  android:label="@string/app_name"
-                  android:theme="@style/AppThemeNoActionbar">
+        <activity
+            android:name=".lollipin.LockedCompatActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppThemeNoActionbar">
+        </activity>
+        <activity android:name=".timeline.TimeLineActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
         </activity>
     </application>
 
