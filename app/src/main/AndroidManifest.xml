@@ -16,6 +16,7 @@
         <activity
             android:name=".MainActivity"
             android:label="Notifications">
+
         </activity>
         <activity android:name=".PhoneEmailActivity">
         </activity>
@@ -57,7 +58,6 @@
         <activity
             android:name=".OrhanobutLoggerActivity"
             android:label="Orhanobut Logger">
-
         </activity>
         <activity
             android:name=".lollipin.MainActivity"
@@ -77,6 +77,8 @@
             android:theme="@style/AppThemeNoActionbar">
         </activity>
         <activity android:name=".timeline.TimeLineActivity">
+        </activity>
+        <activity android:name=".rc.GCListActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 

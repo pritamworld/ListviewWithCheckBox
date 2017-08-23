@@ -101,5 +101,124 @@
             android:text="2 Hrs."
             android:textSize="10sp"/>
     </RadioGroup>
+    <RadioGroup android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/rbgTime">
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <RadioButton
+                android:id="@+id/radio_one0Id"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0%"
+                android:onClick="oneRadioButtonClicked"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/radio_one5Id"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="oneRadioButtonClicked"
+                android:text="5%"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/radio_one10Id"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="oneRadioButtonClicked"
+                android:text="10%"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/radio_one20Id"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="oneRadioButtonClicked"
+                android:text="20%"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/radio_one35Id"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="oneRadioButtonClicked"
+                android:text="35%"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/radio_one50Id"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="oneRadioButtonClicked"
+                android:text="50%"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radio_one65Id"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="oneRadioButtonClicked"
+                android:text="65%"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/radio_one75Id"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="oneRadioButtonClicked"
+                android:text="75%"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/radio_one85Id"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="oneRadioButtonClicked"
+                android:text="85%"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/radio_one95Id"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="oneRadioButtonClicked"
+                android:text="95%"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/radio_one100Id"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="oneRadioButtonClicked"
+                android:text="100%"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+    </RadioGroup>
 </RelativeLayout>

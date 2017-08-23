@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         rbgTime = (RadioGroup)findViewById(R.id.rbgTime);
         //Generate list View from ArrayList
         displayListView();
@@ -233,5 +234,10 @@ public class MainActivity extends AppCompatActivity
         sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "AndroidSolved");
         sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, "Now Learn Android with AndroidSolved clicke here to visit https://androidsolved.wordpress.com/ ");
         startActivity(Intent.createChooser(sharingIntent, "Share via"));
+    }
+
+    public void oneRadioButtonClicked(View view)
+    {
+
     }
 }
