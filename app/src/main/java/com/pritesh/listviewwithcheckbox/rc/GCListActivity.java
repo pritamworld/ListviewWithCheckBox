@@ -50,7 +50,7 @@ public class GCListActivity extends Activity
                         Toast.makeText(GCListActivity.this, String.format(Locale.CANADA,"Click Position [ %d ]",position), Toast.LENGTH_SHORT).show();
                         if(!t1.isSpeaking())
                         {
-                            t1.speak(mGcItemArrayList.get(position).getTitle(), TextToSpeech.QUEUE_FLUSH, null);
+                            t1.speak(mGcItemArrayList.get(position).getTitle(), TextToSpeech.QUEUE_FLUSH, null,"Test");
                         }
                     }
 
@@ -77,7 +77,7 @@ public class GCListActivity extends Activity
             {
                 String toSpeak = "My name is pritesh patel";
                 Toast.makeText(getApplicationContext(), toSpeak,Toast.LENGTH_SHORT).show();
-                t1.speak(toSpeak, TextToSpeech.QUEUE_FLUSH, null);
+                t1.speak(toSpeak, TextToSpeech.QUEUE_FLUSH, null,"Test");
             }
         });
     }

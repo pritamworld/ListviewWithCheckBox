@@ -16,6 +16,7 @@
         android:padding="15dp">
 
         <ImageView
+            android:contentDescription="static elements and the setContentDescription() method for dynamic elements."
             android:id="@+id/imgGC"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
