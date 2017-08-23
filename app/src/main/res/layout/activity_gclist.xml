@@ -5,8 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="5dp"
+    android:orientation="vertical"
     tools:context="com.pritesh.listviewwithcheckbox.rc.GCListActivity">
-
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/btnSpeak"
+    android:text="Speak"/>
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rvGCItem"
         android:layout_width="match_parent"
