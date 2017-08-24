@@ -32,7 +32,7 @@ public class GCListActivity extends Activity
 
         rvGCItem = (RecyclerView)findViewById(R.id.rvGCItem);
         btnSpeak = (Button)findViewById(R.id.btnSpeak);
-
+        //rvGCItem.setNestedScrollingEnabled(false);
         GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 2);
         rvGCItem.setLayoutManager(gridLayoutManager);
 
