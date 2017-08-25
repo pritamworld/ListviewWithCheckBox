@@ -24,7 +24,7 @@ public class CustomBranchIOApplicationClass extends Application
 
         FlurryAgent.setLogEnabled(true);
         FlurryAgent.setLogEvents(true);
-        FlurryAgent.init(this, "");
+        FlurryAgent.init(this, "FBGJX2PMNPFDNRG9VDQ7");
         // initialize the Branch object
         //Branch.setPlayStoreReferrerCheckTimeout(0);
         Branch.getAutoInstance(this);

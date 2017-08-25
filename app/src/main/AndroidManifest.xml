@@ -16,7 +16,6 @@
         <activity
             android:name=".MainActivity"
             android:label="Notifications">
-
         </activity>
         <activity android:name=".PhoneEmailActivity">
         </activity>
@@ -79,6 +78,9 @@
         <activity android:name=".timeline.TimeLineActivity">
         </activity>
         <activity android:name=".rc.GCListActivity">
+
+        </activity>
+        <activity android:name=".TestWebActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
