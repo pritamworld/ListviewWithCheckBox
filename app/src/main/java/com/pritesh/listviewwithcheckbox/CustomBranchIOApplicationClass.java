@@ -2,6 +2,7 @@ package com.pritesh.listviewwithcheckbox;
 
 import android.app.Application;
 
+import com.flurry.android.FlurryAgent;
 import com.github.orangegangsters.lollipin.lib.managers.LockManager;
 import com.pritesh.listviewwithcheckbox.lollipin.CustomPinActivity;
 
@@ -20,6 +21,10 @@ public class CustomBranchIOApplicationClass extends Application
     @Override
     public void onCreate() {
         super.onCreate();
+
+        FlurryAgent.setLogEnabled(true);
+        FlurryAgent.setLogEvents(true);
+        FlurryAgent.init(this, "");
         // initialize the Branch object
         //Branch.setPlayStoreReferrerCheckTimeout(0);
         Branch.getAutoInstance(this);

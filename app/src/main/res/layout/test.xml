@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6.0dip"
+            android:layout_marginTop="6.0dip"
+            android:text="xxxxxx"
+            android:textColor="#ffffffff"
+            android:textSize="14.0dip"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6.0dip"
+            android:layout_marginTop="10.0dip"
+            android:text="app_version_name"
+            android:textColor="#ffffffff"
+            android:textSize="14.0dip"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6.0dip"
+            android:text="xxxxx"
+            android:textColor="#ffffffff"
+            android:textSize="14.0dip"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6.0dip"
+            android:layout_marginTop="10.0dip"
+            android:text="xxxxxxx"
+            android:textColor="#ffffffff"
+            android:textSize="14.0dip"/>
+
+        <TextView
+            android:id="@+id/dev_email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6.0dip"
+            android:layout_marginTop="20.0dip"
+            android:gravity="center_horizontal"
+            android:text="youss.boss1dev@gmail.com"
+            android:textColor="#2704fc"
+            android:textSize="14.0dip"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/close_btn"
+                android:layout_width="110.0dip"
+                android:layout_height="44.0dip"
+                android:layout_marginBottom="4.0dip"
+                android:layout_marginTop="4.0dip"
+                android:text="xxxx"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

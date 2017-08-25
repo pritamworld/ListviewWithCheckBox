@@ -10,10 +10,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.flurry.android.FlurryAgent;
 import com.pritesh.listviewwithcheckbox.R;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Locale;
+import java.util.Map;
 
 public class GCListActivity extends Activity
 {
@@ -27,6 +30,12 @@ public class GCListActivity extends Activity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gclist);
+
+        Map<String, String> articleParams = new HashMap<>();
+        articleParams.put("Author", "Pritesh Patel");
+        articleParams.put("User_Status", "Recyclerview loading");
+
+        FlurryAgent.logEvent("Login_Success", articleParams);
 
         setData();
 

@@ -40,5 +40,7 @@ dependencies {
     compile 'uk.me.lewisdeane.ldialogs:ldialogs:1.2.0@aar'
     compile 'com.android.support:recyclerview-v7:25.3.1'
     compile 'com.android.support:cardview-v7:25.3.1'
+    compile 'com.flurry.android:analytics:6.3.1'
+    compile 'com.google.android.gms:play-services:9.8.0'
     testCompile 'junit:junit:4.12'
 }
